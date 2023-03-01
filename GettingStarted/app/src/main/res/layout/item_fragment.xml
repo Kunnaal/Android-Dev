@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:id="@+id/itemCard"
+    >
+
+    <ImageView
+        android:id="@+id/imgThumbnail"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/sample"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/itemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Item 1"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imgThumbnail"
+        app:layout_constraintStart_toStartOf="@+id/imgThumbnail"
+        app:layout_constraintTop_toBottomOf="@+id/imgThumbnail" />
+
+    <TextView
+        android:id="@+id/itemDesc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Item 1"
+        app:layout_constraintEnd_toEndOf="@+id/imgThumbnail"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/imgThumbnail"
+        app:layout_constraintTop_toBottomOf="@+id/itemName" />
+
+    <TextView
+        android:id="@+id/itemCost"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Cost"
+        app:layout_constraintEnd_toEndOf="@+id/imgThumbnail"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imgThumbnail"
+        app:layout_constraintTop_toBottomOf="@+id/itemDesc" />
+
+    <TextView
+        android:id="@+id/cartStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Add to cart"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:background="@drawable/rounded_corner"
+        app:layout_constraintStart_toStartOf="@+id/imgThumbnail"
+        app:layout_constraintTop_toBottomOf="@+id/itemCost" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
